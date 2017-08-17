@@ -50,10 +50,9 @@ namespace COMP123_S2017_FinalExam_300934575
             }
             set
             {
-                this._score = value;
-                this.ScoreTextBox.Text = Convert.ToString(this._score);
-                this.FinalScoreTextBox.Text = Convert.ToString(this._score);
-            }
+                this._score = Convert.ToInt16(this.ScoreTextBox.Text);
+                this._score = Convert.ToInt16(this.FinalScoreTextBox.Text);
+            }  
         }
         public TextBox ScoreTextBox
         {
@@ -75,8 +74,8 @@ namespace COMP123_S2017_FinalExam_300934575
             }
             set
             {
-                this._time = value;
-                this.TimeTextBox.Text = Convert.ToString(this._time);
+                this._time = Convert.ToInt16(this.TimeTextBox);
+                
             }
         }
 
@@ -111,7 +110,7 @@ namespace COMP123_S2017_FinalExam_300934575
             /// This method updates the TimeTextBox value.
             /// </summary>
         public void UpdateTime()
-        {
+        {        
             this.Time = ((Convert.ToInt32(this.TimeTextBox.Text)) -1);
             this.TimeTextBox.Text = Convert.ToString(this.Time);
         }

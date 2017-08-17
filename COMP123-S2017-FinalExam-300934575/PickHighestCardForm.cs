@@ -241,7 +241,7 @@ namespace COMP123_S2017_FinalExam_300934575
         private void PickHighestCardForm_Load(object sender, EventArgs e)
         {
             // Initialize ScoreBoard HERE
-            ScoreBoard scoreBoard = new ScoreBoard(ScoreBoard.ScoreTextBox , ScoreBoard.TimeTextBox, ScoreBoard.FinalScoreTextBox);
+            ScoreBoard scoreBoard = new ScoreBoard(ScoreTextBox , TimeTextBox, FinalScoreTextBox);
 
 
 
