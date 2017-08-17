@@ -51,6 +51,8 @@ namespace COMP123_S2017_FinalExam_300934575
             set
             {
                 this._score = value;
+                this.ScoreTextBox.Text = Convert.ToString(this._score);
+                this.FinalScoreTextBox.Text = Convert.ToString(this._score);
             }
         }
         public TextBox ScoreTextBox
@@ -74,6 +76,7 @@ namespace COMP123_S2017_FinalExam_300934575
             set
             {
                 this._time = value;
+                this.TimerTextBox.Text = Convert.ToString(this._time);
             }
         }
 
@@ -98,6 +101,12 @@ namespace COMP123_S2017_FinalExam_300934575
         /// <param name="timeTextBox"></param>
         /// <param name="finalScoreTextBox"></param>
         public ScoreBoard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextBox)
+        {
+
+        }
+
+        // PUBLIC METHODS
+        public void UpdateTime()
         {
 
         }
