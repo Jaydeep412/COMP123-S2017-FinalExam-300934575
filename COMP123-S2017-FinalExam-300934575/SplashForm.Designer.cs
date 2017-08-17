@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.SplashFormTimer = new System.Windows.Forms.Timer(this.components);
+            this.WelcomeTItleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SplashFormTimer
@@ -38,6 +39,17 @@
             this.SplashFormTimer.Interval = 3000;
             this.SplashFormTimer.Tick += new System.EventHandler(this.SplashFormTimer_Tick);
             // 
+            // WelcomeTItleLabel
+            // 
+            this.WelcomeTItleLabel.AutoSize = true;
+            this.WelcomeTItleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WelcomeTItleLabel.ForeColor = System.Drawing.Color.White;
+            this.WelcomeTItleLabel.Location = new System.Drawing.Point(38, 157);
+            this.WelcomeTItleLabel.Name = "WelcomeTItleLabel";
+            this.WelcomeTItleLabel.Size = new System.Drawing.Size(514, 31);
+            this.WelcomeTItleLabel.TabIndex = 0;
+            this.WelcomeTItleLabel.Text = "Welcome to the Pick Highest Card Game.";
+            // 
             // SplashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -45,6 +57,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(600, 500);
             this.ControlBox = false;
+            this.Controls.Add(this.WelcomeTItleLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -52,11 +65,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Timer SplashFormTimer;
+        private System.Windows.Forms.Label WelcomeTItleLabel;
     }
 }

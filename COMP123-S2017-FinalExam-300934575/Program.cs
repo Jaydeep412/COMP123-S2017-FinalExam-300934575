@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name: Jaydeep Lakhwani
+ * Date: 17th August, 2017
+ * StudentID: 300934575
+ * Description: This is the driver class for pickHighestCard class.
+ * Version 0.1 : It runs the SplashForm.
  */
 
 namespace COMP123_S2017_FinalExam_300934575
@@ -24,7 +24,7 @@ namespace COMP123_S2017_FinalExam_300934575
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PickHighestCardForm());
+            Application.Run(new SplashForm());
         }
     }
 }
