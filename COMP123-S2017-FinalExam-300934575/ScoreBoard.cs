@@ -15,7 +15,7 @@ namespace COMP123_S2017_FinalExam_300934575
      * Description: This is the ScorBoard class for pickHighestCard class.
      * Version 0.1 : ScoreBoard class created.
      */
-    class ScoreBoard
+    public class ScoreBoard
     {
         //PRIVATE INSTANCE VARIABLES
         private TextBox _finalScoreTextBox;
@@ -76,11 +76,11 @@ namespace COMP123_S2017_FinalExam_300934575
             set
             {
                 this._time = value;
-                this.TimerTextBox.Text = Convert.ToString(this._time);
+                this.TimeTextBox.Text = Convert.ToString(this._time);
             }
         }
 
-        public TextBox TimerTextBox
+        public TextBox TimeTextBox
         {
             get
             {
@@ -106,10 +106,14 @@ namespace COMP123_S2017_FinalExam_300934575
         }
 
         // PUBLIC METHODS
+
+            /// <summary>
+            /// This method updates the TimeTextBox value.
+            /// </summary>
         public void UpdateTime()
         {
-            this.Time = ((Convert.ToInt32(this.TimerTextBox.Text)) -1);
-            this.TimerTextBox.Text = Convert.ToString(this.Time);
+            this.Time = ((Convert.ToInt32(this.TimeTextBox.Text)) -1);
+            this.TimeTextBox.Text = Convert.ToString(this.Time);
         }
     }
 }
