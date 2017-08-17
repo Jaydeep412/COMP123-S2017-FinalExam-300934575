@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name: Jaydeep Lakhwani
+ * Date: 17th August, 2017
+ * StudentID: 300934575
+ * Description:This is the pick the highest card form class.
+ * Version - 0.1 : Final exam project started.
  */
 
 namespace COMP123_S2017_FinalExam_300934575
