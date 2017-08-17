@@ -89,6 +89,17 @@ namespace COMP123_S2017_FinalExam_300934575
             }
         }
 
-        
+        //CONSTRUCTOR
+        /// <summary>
+        /// This is the main constructor for the ScoreBoard Class.
+        /// It takes three parameter - scoreTextBox (TextBox), timeTextBox (TextBox) , finalScoreTextBox (TextBox).
+        /// </summary>
+        /// <param name="scoreTextBox"></param>
+        /// <param name="timeTextBox"></param>
+        /// <param name="finalScoreTextBox"></param>
+        public ScoreBoard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextBox)
+        {
+
+        }
     }
 }
