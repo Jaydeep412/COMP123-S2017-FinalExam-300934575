@@ -108,7 +108,8 @@ namespace COMP123_S2017_FinalExam_300934575
         // PUBLIC METHODS
         public void UpdateTime()
         {
-
+            this.Time = ((Convert.ToInt32(this.TimerTextBox.Text)) -1);
+            this.TimerTextBox.Text = Convert.ToString(this.Time);
         }
     }
 }
